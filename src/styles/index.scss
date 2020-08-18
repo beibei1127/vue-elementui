@@ -1,0 +1,26 @@
+#app{
+    // 左侧导航栏样式
+    .sidebar-container{
+        width:200px;
+        position:fixed;
+        z-index: 100;
+        top:0;left:0;
+        right:0;bottom:0;
+        background-color: #3D3D5C;
+        li{
+            width:200px;
+            text-align: left;
+            
+        }
+    }
+    // 右侧样式
+    .right-container{
+        position: absolute;
+        left:200px;
+        width:calc(100% - 200px);
+        height:100%;
+        transition:width 5s;
+        z-index: 100000;
+        background:#fff;
+    }
+}

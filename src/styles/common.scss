@@ -1,0 +1,38 @@
+$backgroundColor:#eaeaea;
+$color:#42b983;
+$fontFamily:"Microsoft Yahei",SimSun, SimHei,KaiTi,NSimSun,Avenir, Helvetica, Arial, sans-serif;
+
+@mixin clear{
+    &:after{
+        display: block;
+        clear:both;
+        content:'';
+    }
+}
+@import './index.scss';
+
+html,body{
+    width:100%;
+}
+*{
+    box-sizing: border-box;
+}
+html,body,p,h1,h2,h3,h4,h5,h6,ul,li{
+    padding:0;
+    margin:0;
+    font-family:$fontFamily;
+    font-size: 12px;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+.clearfix{
+    @include clear
+}
+a,a:hover,a:focus{
+    color:$color;
+    text-decoration: none;
+}
